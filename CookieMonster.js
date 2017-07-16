@@ -621,6 +621,9 @@ CM.Disp.Beautify = function(num, frac) {
 		}
 		return answer;
 	}
+	else if (!isFinite(num)) {
+		return num;
+	}
 	else {
 		return CM.Backup.Beautify(num, frac);
 	}
